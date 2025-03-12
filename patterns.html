@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Patterns in C</title>
+    <link rel="stylesheet" href="a.css" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <h1>C Program Demonstrating Different Patterns</h1>
+    </header>
+    <h2>Code</h2>
+    <hr>
+    <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int n = 5;
+
+    // Square Pattern
+    printf("Square Pattern:\n");
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    // Rectangle Pattern
+    printf("Rectangle Pattern:\n");
+    int rows = 3, cols = 7;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    // Right Pyramid Pattern
+    printf("Right Pyramid Pattern:\n");
+    for (int i = 1; i <= n; i++) {
+        for (int j = 0; j < i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    // Inverse Right Pyramid Pattern
+    printf("Inverse Right Pyramid Pattern:\n");
+    for (int i = n; i > 0; i--) {
+        for (int j = 0; j < i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+    </pre>
+    <h2>Output</h2>
+    <hr>
+    <img src="patterns.png" alt="Output of the code">
+    <br><br>
+    <button class="button"><a href="index.html">Go Back</a></button>
+    <br><br>
+    <footer class="footer">
+        ©2025
+    </footer>
+</body>
+</html>
